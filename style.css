@@ -1,0 +1,16 @@
+#welcome{
+    position: absolute;
+    background-color: #171717;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.welcome-text{
+    position: relative; 
+    left: -50%;
+    height: 100%;
+    margin-top: 50%;
+    color: white;
+    
+}

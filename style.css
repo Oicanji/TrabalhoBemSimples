@@ -34,9 +34,19 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .nav{
+    background-color: #202020;
     width: 100%;
     border:white 0 solid;
     border-width: 0 0 2px 0;
+}
+.footer{
+    background-color: #202020;
+    width: 100%;
+    border:white 0 solid;
+    border-width: 2px 0 0 0;
+}
+.p-double{
+    padding: 0 10% 0 10%;
 }
 .container{
     margin: 0 6% 0 6%;
@@ -53,8 +63,13 @@ body{
     float: left;
 }
 .h50{
-   
     width: 50%;
+}
+.b-l{
+    border:white 0 solid;
+    border-width: 0 0 0 2px;
+    padding-left: 1%;
+    width: 48%;
 }
 .p-l-5{
     padding-left:10px;

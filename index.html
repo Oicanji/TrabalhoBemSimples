@@ -11,7 +11,7 @@
     <title>VR</title>
 </head>
 <body>
-    <div id="welcome"><div class="welcome-text"> Prepara que lá vem história... </div></div>
+    <div id="welcome" onclick="del()"><div class="welcome-text"> Prepara que lá vem história... </div></div>
     
     <div class="container">
 
@@ -21,8 +21,11 @@
                 <a href="#" class="text-left p-r-4">
                     <h4>&nbsp; Inicio &nbsp;</h4>
                 </a>
-                <a href="" class="text-right">
-                    <h4>&nbsp; Final &nbsp;</h4>
+                <a href="video.html" class="text-left p-r-4">
+                    <h4>&nbsp; Videos &nbsp;</h4>
+                </a>
+                <a href="reference.html" class="text-right">
+                    <h4>&nbsp; Referencia &nbsp;</h4>
                 </a>
                 <br class="clearboth">
             </div>
@@ -33,30 +36,51 @@
     
         <div class="text">Desde 1950 testes de simular a realidade ou experiências eram desenvolvidas para diversos conceitos, porém o termo só foi cunhado em 1980 onde Jaron Lanier conciliou os termos da informática com a construção de realidades simuladas dentro do computador, criando o termo mais <a class="rainbowText">vaporwave</a> possível, o “Cyberspace”.
         Esse termo entraria para o imaginário cultural em de 1984, no romance de ficção científica <a class="rainbowText">Neuromancer</a> de William Gibson. </div>
-        
+        <br>
+        <img src="history.png" width="100%">
+        <br>
         <div class="text">Desde então, vários projetos em diversas áreas foram desenvolvidos, como o <a class="rainbowText">Virtual Boy</a> da Nintendo em 1995, que seria um console portátil, que mesmo sendo algo revolucionário na época, por diversos problemas flopou.
         
-        A tecnologia só voltaria a se destacar novamente no mercado do entretenimento em 2012, após o <a class="rainbowText">kickstarter</a>  2,4 milhões de dólares do Oculus Rift, lançando o primeiro produto em 2016, onde finalmente o mercado começou a se desenvolver na área.</div>
-
-        <div class="text-left">Porém essa tecnologia vai muito além da indústria do entretenimento, sendo utilizada na área médica até a engenharia, com usos muito distintos, desde ajudar pacientes com transtornos e fobias, até mesmo treinamento de militares.</div>
+        A tecnologia só voltaria a se destacar novamente no mercado do entretenimento em 2012, após o <a class="rainbowText">kickstarter</a>  2,4 milhões de dólares do <a class="rainbowText">Oculus Rift</a>, lançando o primeiro produto em 2016, onde finalmente o mercado começou a se desenvolver na área.</div>
+        
         <br class="clearboth">
-        
-        <div>Chegamos em uma etapa da tecnologia que, como Elon Musk comentou em 2016, segundo ele a <a class="rainbowText">Realidade Virtual</a> pode ser tão real, que nada pode provar que nós não estamos já vivendo dentro de uma simulação, feita por uma outra civilização anterior a nossa</div>
-        
-        <img class="img-left h50" src="test.png" width="50%" alt="">
-        <div class="text-right h50 p-l-5">Dentro da realidade virtual existe algo que vai além de substituir o que você está vendo por um conteúdo 100% virtual.
+
+        <div class="text-left h50">Porém essa tecnologia vai muito além da indústria do entretenimento, sendo utilizada na área médica até a engenharia, com usos muito distintos, desde ajudar pacientes com transtornos e fobias, até mesmo treinamento de militares.<br>
+        Chegamos em uma etapa da tecnologia que, como Elon Musk comentou em 2016, segundo ele a <a class="rainbowText">Realidade Virtual</a> pode ser tão real, que nada pode provar que nós não estamos já vivendo dentro de uma simulação, feita por uma outra civilização anterior a nossa</div>
+
+        <div class="text-right b-l"><iframe width="100%" height="315" src="https://www.youtube.com/embed/gYEDmt6WxgU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <br class="clearboth">
+        <br>
+        <img class="img-left h50" src="vr.jpg" width="20%" alt="">
+        <div class="text-right h50 b-l">Dentro da realidade virtual existe algo que vai além de substituir o que você está vendo por um conteúdo 100% virtual.
         <br>
         Essa outra tecnologia é a realidade aumentada, que projeta informações (imagens, gráficos, personagens, textos) no mundo real. Um exemplo que faz bastante sucesso são os filtros do <a class="rainbowText">Instagram Stories</a>. O <a class="rainbowText">Hololens</a> e <a class="rainbowText">Google Glass</a> foram criados especialmente para uso da realidade aumentada, neste caso, o uso vai mais além, permitindo a visualização de mapas, agenda pessoal e previsão do tempo.</div>
         <br class="clearboth">
 
         <div class="text">A realidade aumentada inclui componentes que podem interagir com o que já existe.
         Utilizando essa tecnologia, vamos cada vez juntando o virtual com o real, ainda mais hoje, que podemos criar toda uma forma virtual, e imprimi-las para nossa realidade sem sair de casa. </div>
+        <br>
+
+        <div class="footer"> 
+            <h1 class="text-left">&nbsp;&nbsp; Fim do Trabalho</h1>
+            <div class="text-right">
+                <a href="https://github.com/Oicanji" class="text-right">
+                    <h4>&nbsp; Oicanji@Github &nbsp;</h4>
+                </a>
+                <a href="#" class="text-left p-r-4">
+                    <h4>&nbsp; Voltar para cima &nbsp;</h4>
+                </a>
+            </div>
+            <br class="clearboth">
+        </div>
     </div>
     <script>
         function sleep(ms) {
             return new Promise(resolve => setTimeout(resolve, ms));
         }
-
+        function del(){
+            document.getElementById('welcome').remove();
+        }
         async function erased() {
             console.log('Taking a break...');
             await sleep(4000);
